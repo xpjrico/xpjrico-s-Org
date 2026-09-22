@@ -1,0 +1,36 @@
+{
+  "name": "Studia - AI Study & Timetable",
+  "short_name": "Studia",
+  "description": "Mobile-first PWA study application with class timetable visualizer, AI study notes summarizer, practice quiz generator, and M-Pesa local payment support.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07090e",
+  "theme_color": "#07090e",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Timetable",
+      "url": "/?tab=timetable",
+      "description": "View your class schedule"
+    },
+    {
+      "name": "AI Study Hub",
+      "url": "/?tab=aihub",
+      "description": "Summarize notes & take quizzes"
+    },
+    {
+      "name": "Focus Mode",
+      "url": "/?tab=focus",
+      "description": "Start a study timer session"
+    }
+  ]
+}

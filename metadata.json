@@ -1,0 +1,6 @@
+{
+  "name": "Studia",
+  "description": "Full-stack AI SaaS web platform featuring an interactive analytics dashboard with Recharts, AI Note Summarizer, Quiz Generator, Smart Timetable, Text-to-Speech audio narration, and a USD subscription paywall with weekly, monthly, and yearly options.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

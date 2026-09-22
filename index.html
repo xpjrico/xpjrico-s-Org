@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#07090e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Studia" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="apple-touch-icon" href="/icon.svg" />
+    <title>Studia - AI SaaS Platform & Analytics</title>
+    <meta name="description" content="Full-stack AI SaaS web platform featuring an interactive analytics dashboard with Recharts, AI Note Summarizer, Quiz Generator, Smart Timetable, Text-to-Speech audio narration, and a USD subscription paywall with weekly, monthly, and yearly options." />
+    <meta property="og:title" content="Studia - AI SaaS Platform & Analytics" />
+    <meta property="og:description" content="Full-stack AI SaaS web platform featuring an interactive analytics dashboard with Recharts, AI Note Summarizer, Quiz Generator, Smart Timetable, Text-to-Speech audio narration, and a USD subscription paywall with weekly, monthly, and yearly options." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Polyfills for iOS Safari & WebKit WebView compatibility -->
+    <script>
+      (function() {
+        if (typeof Promise.withResolvers === 'undefined') {
+          Promise.withResolvers = function () {
+            var resolve, reject;
+            var promise = new Promise(function (res, rej) {
+              resolve = res;
+              reject = rej;
+            });
+            return { promise: promise, resolve: resolve, reject: reject };
+          };
+        }
+      })();
+    </script>
+    <!-- Paystack Inline JS for African Mobile Money (M-Pesa) & International Cards -->
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
